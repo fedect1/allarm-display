@@ -1,0 +1,20 @@
+.event-log-container {
+  width: 30%;
+  height: 70%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.event-log-header {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.event-log {
+  margin-top: 10%;
+  height: 70%
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between; /* Para que las tarjetas se distribuyan uniformemente */
+}

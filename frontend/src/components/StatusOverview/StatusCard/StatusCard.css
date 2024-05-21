@@ -1,0 +1,71 @@
+.status-card {
+  border-radius: 9px;
+  background: #187CBF;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  width: 15%;
+  margin: 10px;
+  padding: 15px;
+  transition: background 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-card.alert {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    background-color: red;
+  }
+}
+
+.status-card-header {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.status-card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.semaphore.light {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 1%;
+}
+
+.green {
+  background-color: green;
+}
+
+.alert {
+  animation: alert-animation 1s infinite;
+}
+
+@keyframes alert-animation {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.semaphore.left.alert {
+  animation-delay: 0s;
+}
+
+.semaphore.right.alert {
+  animation-delay: 0.5s;
+}
+

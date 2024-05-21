@@ -1,0 +1,38 @@
+.event-card {
+    border-radius: 9px;
+    background: #187CBF;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    margin: 1% 0;
+    padding: 2%;
+    transition: background 0.5s;
+    display: flex;
+    flex-direction: column;
+    height: 5%; /* Ajusta este valor para adaptarse al número máximo de tarjetas */
+  }
+  
+  .event-card.active {
+    background: red;
+    color: white;
+  }
+  
+  .event-card-header {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .event-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .event-card-time,
+  .event-card-status,
+  .event-card-elapsed {
+    font-size: 1em;
+    margin: 0 5px;
+    flex: 1;
+    text-align: center;
+  }
+  

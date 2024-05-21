@@ -1,0 +1,37 @@
+.active-alarms-container {
+  width: 70%;
+  height: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.active-alarms-header {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 3%;
+}
+
+.active-alarms-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3%;
+  height: calc(100% - 15%);
+}
+
+.alarm-card {
+  border-radius: 9px;
+  background: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
